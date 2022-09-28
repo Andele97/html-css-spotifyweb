@@ -35,6 +35,25 @@ footer {
   background-color: #282828;
 }
 
+h2 {
+  color: white;
+}
+
+span {
+  margin-top: 20px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #6A6A6A;
+}
+
 .button {
   padding: 10px;
   border-radius: 20px;
@@ -79,10 +98,49 @@ footer {
 }
 
 .menu-left {
-  height: 90px;
   background-color: red;
   border: 1px solid;
-  margin-bottom: 20px;
+  display: flex;
+}
+
+.menu-left li {
+  margin-bottom: 25px;
+}
+
+.menu-left ul {
+  padding: 10px 5px;
+}
+
+.menu-left .icons {
+  height: 100%;
+  width: 40px;
+}
+
+.menu-left .icon {
+  height: calc(100% / 3); 
+}
+
+.menu-left .icon img {
+  width: 100%;
+  height: 100%;
+  fill: #6A6A6A;
+}
+
+.menu-left-bottom {
+  background-color: red;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-left-bottom h4 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.menu-left-bottom li {
+  margin-bottom: 10px;
 }
 
 /* Album */
@@ -91,7 +149,6 @@ footer {
   padding-top: 100px;
   overflow: scroll;
   display: flex; 
-  background-color: yellow;
   flex-direction: column;
 }
 
@@ -100,24 +157,18 @@ footer {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  background-color: red;
 }
 
 .container .nav-main ul {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .container .nav-main ul li {
   margin-left: 20px;
   text-transform: uppercase;
-}
-
-.container .nav-main ul a {
-  text-decoration: none;
-  color: white;
 }
 
 .container .nav-main ul a:hover {
@@ -129,9 +180,9 @@ footer {
 }
 
 .container-box {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: rosybrown;
 }
 
 .container-box:nth-child(3) {
@@ -139,20 +190,19 @@ footer {
 }
 
 .box {
-  height: 240px;
-  width: 240px;
+  height: 300px;
+  width: 300px;
   margin: 45px 5px;
   border: 1px solid;
 }
 
 .box img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .text {
-  background-color: violet;
   text-align: center;
 }
 
@@ -162,7 +212,6 @@ footer {
 
 .container span {
   font-size: 0.8em;
-  color: lightgray;
 }
 
 .scroll {
@@ -170,6 +219,7 @@ footer {
   height: 100%;
   background-color: #282828;
 }
+
 /****************************************
 ***************RESPONSIVE***************/
 
@@ -185,5 +235,12 @@ footer {
   }
   .container {
     width: 100%;
+  }
+  .container .nav-main ul {
+    margin: 10px;
+    justify-content: center;
+  }
+  .container-box {
+    justify-content: center;
   }
 }
