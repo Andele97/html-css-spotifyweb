@@ -19,13 +19,14 @@ header {
   width: 230px;
   height: 100%;
   background-color: black;
+  
 }
 
 main {
   height: calc(100vh - 88px);
-  background-color: #141922;
-  overflow: auto;
   display: flex;
+  overflow: auto;
+  background-color: #141922;
 }
 
 .principal {
@@ -50,6 +51,40 @@ p {
   color: white;
 }
 
+.container {
+  width: calc(100% - 260px);
+  margin-top: 100px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+/* MAIN */
+
+/* Logo */
+.container-left {
+  width: calc(100% - 20px);
+  height: 100%;
+  margin: 10px auto;
+  background-color: yellow;
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+.menu-left {
+  height: 90px;
+  background-color: red;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
 
 
 /****************************************
