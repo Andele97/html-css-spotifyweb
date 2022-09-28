@@ -8,36 +8,42 @@
 
 header {
   height: 90px;
-  width: 100%;
+  width: calc(100% - 230px);
   background-color: #080B12;
   opacity: 0.8;
   position: fixed;
+  right: 0;
 }
 
 .nav {
   width: 230px;
-  height: calc(100vh - 88px);
+  height: 100%;
   background-color: black;
-  float: left;
 }
 
 main {
   height: calc(100vh - 88px);
   background-color: #141922;
   overflow: auto;
+  display: flex;
+}
+
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll {
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
 }
 
 footer {
   height: 88px;
   width: 100%;
   background-color: #282828;
-}
-
-.scroll {
-  width: 10px;
-  height: calc(100vh - 88px);
-  background-color: #282828;
-  float: right;
 }
 
 p {
@@ -50,6 +56,9 @@ p {
 ***************RESPONSIVE***************/
 
 @media screen and (max-width: 500px) {
+  header {
+    width: calc(100% - 80px);
+  }
   .nav-50 {
     width: 80px;
   }
