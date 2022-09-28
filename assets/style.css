@@ -42,10 +42,6 @@ footer {
   color: white;
 }
 
-p {
-  color: white;
-}
-
 /* HEADER */
 
 .cont {
@@ -138,10 +134,14 @@ p {
   background-color: rosybrown;
 }
 
+.container-box:nth-child(3) {
+  padding-bottom: 90px;
+}
+
 .box {
   height: 240px;
   width: 240px;
-  margin: 25px 5px;
+  margin: 45px 5px;
   border: 1px solid;
 }
 
@@ -149,6 +149,20 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.text {
+  background-color: violet;
+  text-align: center;
+}
+
+.container .text h4 {
+  color: white;
+}
+
+.container span {
+  font-size: 0.8em;
+  color: lightgray;
 }
 
 .scroll {
@@ -159,7 +173,7 @@ p {
 /****************************************
 ***************RESPONSIVE***************/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 765px) {
   header {
     width: calc(100% - 67px);
   }
