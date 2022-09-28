@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   height: 90px;
   width: calc(100% - 230px);
@@ -13,13 +17,9 @@ header {
   opacity: 0.8;
   position: fixed;
   right: 0;
-}
-
-.nav {
-  width: 230px;
-  height: 100%;
-  background-color: black;
-  
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 main {
@@ -29,45 +29,50 @@ main {
   background-color: #141922;
 }
 
-.principal {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.scroll {
-  width: 10px;
-  height: 100%;
-  background-color: #282828;
-}
-
 footer {
   height: 88px;
   width: 100%;
   background-color: #282828;
 }
 
+.button {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+}
+
 p {
   color: white;
 }
 
-.container {
-  width: calc(100% - 260px);
-  margin-top: 100px;
+/* HEADER */
+
+.cont {
+  width: 300px;
+  height: 60px;
+  margin-right: 20px; 
+  text-align: center;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-}
 
 /* MAIN */
 
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 /* Logo */
+
+.nav {
+  width: 230px;
+  height: 100%;
+  background-color: black;
+}
+
 .container-left {
   width: calc(100% - 20px);
-  height: 100%;
   margin: 10px auto;
   background-color: yellow;
 }
@@ -86,7 +91,23 @@ p {
   margin-bottom: 20px;
 }
 
+/* Album */
+.container {
+  width: calc(100% - 260px);
+  margin-top: 100px;
+}
 
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.scroll {
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+}
 /****************************************
 ***************RESPONSIVE***************/
 
