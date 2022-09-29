@@ -39,10 +39,8 @@ h2 {
   color: white;
 }
 
-span {
-  margin-top: 20px;
-  color: lightgray;
-  font-weight: bold;
+h4 {
+  color: white;
 }
 
 ul {
@@ -73,13 +71,13 @@ a {
 
 /* MAIN */
 
-.principal {
+#principal {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-/* Logo */
 
+/* Logo - Nav*/
 .nav {
   width: 230px;
   height: 100%;
@@ -133,9 +131,14 @@ a {
   flex-direction: column;
 }
 
+.menu-left-bottom span i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: lightgray;
+}
+
 .menu-left-bottom h4 {
   text-transform: uppercase;
-  color: white;
   margin-bottom: 10px;
 }
 
@@ -143,8 +146,13 @@ a {
   margin-bottom: 10px;
 }
 
+.menu-left-bottom .playlist {
+  background-color: yellow;
+  overflow: scroll;
+}
+
 /* Album */
-.container {
+#container {
   width: calc(100% - 260px);
   padding-top: 100px;
   overflow: scroll;
@@ -152,31 +160,48 @@ a {
   flex-direction: column;
 }
 
-.container .nav-main {
+#container .nav-main {
   display: flex;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
 
-.container .nav-main ul {
+#container .nav-main ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 }
 
-.container .nav-main ul li {
+#container .nav-main ul li {
   margin-left: 20px;
   text-transform: uppercase;
 }
 
-.container .nav-main ul a:hover {
+#container .nav-main ul a:hover {
   box-shadow: 0px 2px 0px green;
+  color: white;
 }
 
-.container h2 {
+#container h2 {
+  font-size: 2.5em;
   margin-top: 30px;
+}
+
+#container span {
+  margin-top: 20px;
+  color: lightgray;
+}
+
+#container .text h4 {
+  color: white;
+}
+
+#container .text span {
+  font-size: 0.8em;
+  color: lightgray;
+  font-weight: bold;
 }
 
 .container-box {
@@ -203,15 +228,8 @@ a {
 }
 
 .text {
+  padding: 20px;
   text-align: center;
-}
-
-.container .text h4 {
-  color: white;
-}
-
-.container span {
-  font-size: 0.8em;
 }
 
 .scroll {
