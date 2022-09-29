@@ -85,6 +85,15 @@ a {
   background-color: black;
 }
 
+.nav a:hover {
+  color: white;
+}
+
+.nav a {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
 .container-left {
   width: calc(100% - 20px);
   margin: 10px auto;
@@ -96,53 +105,33 @@ a {
   margin-bottom: 10px;
 }
 
-.menu-left {
-  background-color: red;
-  border: 1px solid;
-  display: flex;
+.menu-left ul {
+  margin-bottom: 20px;
 }
 
 .menu-left li {
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-.menu-left ul {
-  padding: 10px 5px;
-}
-
-.menu-left .icons {
-  height: 100%;
+.menu-left li img {
+  height: 30px;
   width: 40px;
-}
-
-.menu-left .icon {
-  height: calc(100% / 3); 
-}
-
-.menu-left .icon img {
-  width: 100%;
-  height: 100%;
-  fill: #6A6A6A;
+  cursor: pointer;
 }
 
 .menu-left-bottom {
-  background-color: red;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
+  margin-left: 10px;
 }
 
 .menu-left-bottom span {
-  width: 150px;
   display: flex;
   align-items: center;
-  background-color: violet;
 }
 
 .menu-left-bottom span a {
   margin: 0px 0px 10px 5px;
-  background-color: aqua;
-
 }
 
 .menu-left-bottom span i {
@@ -161,7 +150,6 @@ a {
 }
 
 .menu-left-bottom .playlist {
-  background-color: yellow;
   height: calc(100vh - 500px);
   overflow: scroll;
   overflow-x: hidden;
@@ -258,7 +246,6 @@ a {
   width: 10px;
   height: 100%;
   background-color: #282828;
- 
 }
 
 /* FOOTER */
@@ -270,15 +257,14 @@ a {
   background-color: red;
   display: flex;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .functions .song {
-  width: 190px;
   height: 60px;
   margin-left: 10px;
   display: flex;
   align-items: center;
-  flex-shrink: 2;
   background-color: yellow;
 }
 
@@ -311,6 +297,7 @@ a {
   margin-top: 5px;
 }
 
+/* Center Footer */
 .functions:nth-child(2) {
   flex-direction: column;
 }
@@ -327,7 +314,7 @@ a {
   border: 5px solid lightgray;
   border-radius: 100%;
   text-align: center;
-  padding: 0px 0px 2px 3px;
+  padding: 2px 0px 2px 3px;
 }
 
 .functions .select-2 {
@@ -340,7 +327,7 @@ a {
 }
 
 .functions .select i {
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: lightgray;
 }
 
@@ -373,6 +360,16 @@ a {
 .functions .music .bar:hover {
   background-color: green;
 }
+
+/* Right Footer */
+
+.functions .volume {
+  height: 100%;
+  width: 30%;
+  background-color: aqua;
+  align-content: flex-end;
+}
+
 /****************************************
 ***************RESPONSIVE***************/
 
