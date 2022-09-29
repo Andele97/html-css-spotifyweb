@@ -33,6 +33,7 @@ footer {
   height: 88px;
   width: 100%;
   background-color: #282828;
+  display: flex;
 }
 
 h2 {
@@ -148,16 +149,24 @@ a {
 
 .menu-left-bottom .playlist {
   background-color: yellow;
+  height: 100%;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
+.profile {
+  height: 60px;
+  align-self: flex-end;
+  background-color: red;
+}
 /* Album */
 #container {
   width: calc(100% - 260px);
   padding-top: 100px;
-  overflow: scroll;
   display: flex; 
   flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 #container .nav-main {
@@ -236,6 +245,15 @@ a {
   width: 10px;
   height: 100%;
   background-color: #282828;
+}
+
+/* FOOTER */
+
+footer .functions {
+  width: calc(100% / 3);
+  height: 100%;
+  border: 1px solid;
+  background-color: red;
 }
 
 /****************************************
