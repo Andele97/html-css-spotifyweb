@@ -261,4 +261,8 @@ a {
   .container-box {
     justify-content: center;
   }
+  .menu-left ul,
+  .menu-left-bottom {
+    display: none;
+  }
 }
