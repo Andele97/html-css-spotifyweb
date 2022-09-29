@@ -133,8 +133,16 @@ a {
 }
 
 .menu-left-bottom span {
+  width: 150px;
+  display: flex;
   align-items: center;
-  
+  background-color: violet;
+}
+
+.menu-left-bottom span a {
+  margin: 0px 0px 10px 5px;
+  background-color: aqua;
+
 }
 
 .menu-left-bottom span i {
@@ -250,6 +258,7 @@ a {
   width: 10px;
   height: 100%;
   background-color: #282828;
+ 
 }
 
 /* FOOTER */
@@ -269,6 +278,7 @@ a {
   margin-left: 10px;
   display: flex;
   align-items: center;
+  flex-shrink: 2;
   background-color: yellow;
 }
 
@@ -299,6 +309,69 @@ a {
 
 .functions .song .ico i {
   margin-top: 5px;
+}
+
+.functions:nth-child(2) {
+  flex-direction: column;
+}
+
+.functions .select {
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.functions .select .play {
+  width: 40px;
+  height: 40px;
+  border: 5px solid lightgray;
+  border-radius: 100%;
+  text-align: center;
+  padding: 0px 0px 2px 3px;
+}
+
+.functions .select-2 {
+  width: 40%;
+  min-width: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 0 auto;
+}
+
+.functions .select i {
+  font-size: 1.8em;
+  color: lightgray;
+}
+
+.functions .select .play:hover {
+  transform: scale(1.1);
+}
+
+.functions .cont-music {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.functions .music {
+  width: 80%;
+  height: 7px;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.functions .music .bar {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.functions .music .bar:hover {
+  background-color: green;
 }
 /****************************************
 ***************RESPONSIVE***************/
