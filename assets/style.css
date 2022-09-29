@@ -132,6 +132,11 @@ a {
   flex-direction: column;
 }
 
+.menu-left-bottom span {
+  align-items: center;
+  
+}
+
 .menu-left-bottom span i {
   font-size: 40px;
   margin-bottom: 10px;
@@ -149,7 +154,7 @@ a {
 
 .menu-left-bottom .playlist {
   background-color: yellow;
-  height: 100%;
+  height: calc(100vh - 500px);
   overflow: scroll;
   overflow-x: hidden;
 }
