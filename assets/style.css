@@ -69,7 +69,6 @@ a {
   text-align: center;
 }
 
-
 /* MAIN */
 
 #principal {
@@ -150,16 +149,49 @@ a {
 }
 
 .menu-left-bottom .playlist {
-  height: calc(100vh - 500px);
+  height: calc(100vh - 460px);
   overflow: scroll;
   overflow-x: hidden;
 }
 
-.profile {
+.settings {
   height: 60px;
+  margin-left: 10px;
   align-self: flex-end;
-  background-color: red;
 }
+
+.settings .download {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  font-weight: bold;
+  color: gray;
+}
+
+.settings .download img {
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.settings .profile {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: gray;
+}
+
+.settings .profile img {
+  width: 35px;
+  height: 33px;
+  margin-right: 10px;
+  background-color: gray;
+  border-radius: 100%;
+}
+
 /* Album */
 #container {
   width: calc(100% - 260px);
