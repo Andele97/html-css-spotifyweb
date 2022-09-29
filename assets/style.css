@@ -402,6 +402,7 @@ a {
 }
 
 .functions .volume {
+  width: 250px;
   height: 100%;
   padding-right: 10px;
   display: flex;
