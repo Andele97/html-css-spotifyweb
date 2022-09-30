@@ -65,8 +65,13 @@ a {
 .cont {
   width: 300px;
   height: 60px;
-  margin-right: 20px; 
+  margin-right: 20px;
+  margin-top: 15px; 
   text-align: center;
+}
+
+.cont:hover {
+  transform: scale(1.1);
 }
 
 /* MAIN */
@@ -251,6 +256,7 @@ a {
 
 .container-box {
   width: 100%;
+  max-width: 2000px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -271,9 +277,16 @@ a {
 }
 
 .box img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: 100%;
   object-fit: cover;
+}
+
+.box img:hover {
+  filter: brightness(50%);
+  font-family: 'FontAwesome';
+  content: '\f144';
 }
 
 .text {
@@ -346,13 +359,12 @@ a {
   padding-top: 5px;
 }
 
-.functions .select .play {
-  width: 40px;
-  height: 40px;
-  border: 5px solid lightgray;
-  border-radius: 100%;
-  text-align: center;
-  padding: 2px 0px 2px 3px;
+.functions .select-2 i:nth-child(3) {
+  transform: scale(1.5);
+}
+
+.functions .select-2 i:nth-child(3):hover {
+  transform: scale(1.7);
 }
 
 .functions .select-2 {
@@ -365,12 +377,9 @@ a {
 }
 
 .functions .select i {
+  margin-top: 10px;
   font-size: 1.7em;
   color: lightgray;
-}
-
-.functions .select .play:hover {
-  transform: scale(1.1);
 }
 
 .functions .cont-music {
@@ -440,7 +449,7 @@ a {
 
 @media screen and (max-width: 880px) {
   header {
-    width: calc(100% - 67px);
+    width: calc(100% - 79px);
   }
   .nav-50 {
     width: 80px;
@@ -448,20 +457,34 @@ a {
   .nav-50 .logo {
     display: none;
   }
-  .container {
-    width: 100%;
+  .nav-50 .logo img:last-child {
+    display: block;
   }
-  .container-box {
-    width: 100%;
+  #container {
+    width: 87%;
   }
-  .container .nav-main ul {
-    margin: 10px;
+  #container .nav-main ul{
+    width: 100%;
+    max-width: 700px;
+  }
+  #container .nav-main ul li {
+    padding-top: 20px;
     justify-content: center;
   }
   .menu-left a,
-  .settings,
+  .settings span,
   .menu-left-bottom {
     display: none;
+  }
+  .settings .download img {
+    width: 35px;
+  }
+}
+
+@media screen and (min-width: 881px) {
+  #container .nav-main ul li {
+    padding-top: 20px;
+    justify-content: center;
   }
 }
 
@@ -485,3 +508,4 @@ a {
     width: calc(100% / 2);
   }
 }
+
