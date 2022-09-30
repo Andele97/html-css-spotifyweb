@@ -53,6 +53,12 @@ a {
   color: #6A6A6A;
 }
 
+/* UTILITY */
+
+.active {
+  border-left: 4px solid green;
+}
+
 .button {
   padding: 10px;
   border-radius: 20px;
@@ -285,7 +291,7 @@ a {
 
 .box img:hover {
   filter: brightness(50%);
-  font-family: 'FontAwesome';
+  font-family: FontAwesome;
   content: '\f144';
 }
 
