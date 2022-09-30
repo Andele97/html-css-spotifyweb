@@ -384,14 +384,13 @@ a {
 }
 
 .functions .cont-music {
+  height: 40px;
   width: 100%;
-  margin-top: 20px;
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 
 .functions .cont-music span {
-  padding-bottom: 20px;
   font-size: 0.9em;
   font-weight: bold;
   color: white;
@@ -410,10 +409,6 @@ a {
   height: 100%;
   border-radius: 10px;
   background-color: lightgray;
-}
-
-.functions .music .bar:hover {
-  background-color: green;
 }
 
 /* Right Footer */
@@ -450,6 +445,11 @@ a {
   height: 4px;
   border-radius: 10px;
   background-color: lightgray;
+}
+
+.functions .music:hover .bar,
+.functions .volume .volume-bar:hover .scrolling {
+  background-color: green;
 }
 
 /****************************************
