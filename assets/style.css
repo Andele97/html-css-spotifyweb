@@ -227,6 +227,7 @@ a {
 #container .nav-main ul li {
   margin-left: 20px;
   text-transform: uppercase;
+  font-weight: bold
 }
 
 #container .nav-main ul a:hover {
@@ -291,6 +292,7 @@ a {
 
 .text {
   padding: 20px;
+  width: 300px;
   text-align: center;
 }
 
@@ -329,19 +331,20 @@ a {
 }
 
 .functions .song .name {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .functions .song .name span {
   font-size: 0.7em;
   font-weight: bold;
-  color: #141922;
+  color: #757575;
 }
 
 .functions .song .ico {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 30px;
+  color: #757575;
 }
 
 .functions .song .ico i {
@@ -389,6 +392,13 @@ a {
   text-align: center;
 }
 
+.functions .cont-music span {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: white;
+}
+
 .functions .music {
   width: 80%;
   height: 7px;
@@ -425,7 +435,7 @@ a {
 }
 
 .functions .volume i {
-  color: grey;
+  color: #757575;
   margin-left: 25px;
 }
 
