@@ -475,12 +475,15 @@ a {
     width: 87%;
   }
   #container .nav-main ul{
-    width: 60%;
+    width: 70%;
     max-width: 500px;
   }
   #container .nav-main ul li {
     padding-top: 20px;
     justify-content: center;
+  }
+  .container-box{
+    width: 620px;
   }
   .menu-left-bottom{
     height: calc(100vh - 365px);
