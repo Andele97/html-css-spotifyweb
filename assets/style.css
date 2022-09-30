@@ -259,6 +259,10 @@ a {
   padding-bottom: 90px;
 }
 
+.circle img {
+  border-radius: 100%;
+}
+
 .box {
   height: 300px;
   width: calc(100% / 6);
