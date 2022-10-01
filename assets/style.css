@@ -64,6 +64,7 @@ a {
   border-radius: 20px;
   border: 1px solid white;
   color: white;
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -280,6 +281,7 @@ a {
   width: calc(100% / 6);
   min-width: 200px;
   margin: 45px 0px;
+  position: relative;
 }
 
 .box img {
@@ -287,18 +289,14 @@ a {
   max-width: 300px;
   height: 100%;
   object-fit: cover;
-}
-
-.box img:hover {
-  filter: brightness(50%);
-  font-family: FontAwesome;
-  content: '\f144';
+  cursor: pointer;
 }
 
 .text {
   padding: 20px;
   width: 300px;
   text-align: center;
+  cursor: pointer;
 }
 
 .scroll {
@@ -477,6 +475,9 @@ a {
     width: 32px;
     margin-bottom: 20px;
   }
+  .nav-50 .active {
+    border-left: none;
+  }
   #container {
     width: 87%;
   }
@@ -496,7 +497,8 @@ a {
   }
   .menu-left a,
   .settings span,
-  .menu-left-bottom .playlist,h4 {
+  .menu-left-bottom .playlist,
+  .menu-left-bottom h4 {
     display: none;
   }
   .menu-left-bottom .add {
