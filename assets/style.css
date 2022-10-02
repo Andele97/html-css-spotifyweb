@@ -527,19 +527,26 @@ a {
   }
 }
 
-@media screen and (max-width: 1853px) {
-  .box {
-    width: calc(100% / 4);
-  }
-}
-@media screen and (max-width: 1553px) {
-  .box {
-    width: calc(100% / 3);
-  }
-}
 @media screen and (max-width: 1189px) {
   .box {
     width: calc(100% / 2);
   }
 }
 
+@media screen and (max-width: 1553px) {
+  .box {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 1853px) {
+  .box {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 2119px) {
+  .box {
+    width: calc(100% / 5);
+  } 
+}
