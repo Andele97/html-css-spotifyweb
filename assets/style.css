@@ -210,7 +210,7 @@ a {
 
 /* Album */
 #container {
-  width: calc(100% - 260px);
+  width: calc(100% - 240px);
   padding-top: 100px;
   display: flex; 
   flex-direction: column;
@@ -277,9 +277,10 @@ a {
 
 .box {
   height: 300px;
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   min-width: 200px;
   margin: 45px 0px;
+  margin-left: 10px;
 }
 
 .box img {
@@ -291,7 +292,7 @@ a {
 
 .text {
   padding: 20px;
-  width: 300px;
+  max-width: 300px;
   text-align: center;
   cursor: pointer;
 }
@@ -486,6 +487,12 @@ a {
     padding-top: 20px;
     justify-content: center;
   }
+  .container-box {
+    justify-content: center;
+  }
+  .box {
+    width: calc(100% / 3);
+  }
   .menu-left-bottom{
     height: calc(100vh - 365px);
   }
@@ -521,26 +528,20 @@ a {
   }
 }
 
-@media screen and (max-width: 1189px) {
+@media screen and (max-width: 1665px) {
   .box {
-    width: calc(100% / 2);
+    width: calc(100% / 6);
   }
 }
 
-@media screen and (max-width: 1553px) {
+@media screen and (max-width: 1407px) {
   .box {
-    width: calc(100% / 3);
+    width: calc(100% / 5);
   }
 }
 
-@media screen and (max-width: 1826px) {
+@media screen and (max-width: 1261px) {
   .box {
     width: calc(100% / 4);
   }
-}
-
-@media screen and (max-width: 2119px) {
-  .box {
-    width: calc(100% / 5);
-  } 
 }
