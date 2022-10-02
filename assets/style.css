@@ -263,7 +263,6 @@ a {
 
 .container-box {
   width: 100%;
-  max-width: 2000px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -281,13 +280,11 @@ a {
   width: calc(100% / 6);
   min-width: 200px;
   margin: 45px 0px;
-  position: relative;
 }
 
 .box img {
   width: 100%;
   max-width: 300px;
-  height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
@@ -489,9 +486,6 @@ a {
     padding-top: 20px;
     justify-content: center;
   }
-  .container-box{
-    width: 620px;
-  }
   .menu-left-bottom{
     height: calc(100vh - 365px);
   }
@@ -539,7 +533,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1853px) {
+@media screen and (max-width: 1826px) {
   .box {
     width: calc(100% / 4);
   }
