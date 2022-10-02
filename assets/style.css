@@ -67,6 +67,16 @@ a {
   cursor: pointer;
 }
 
+.cerchio {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -6px;
+}
+
 /* HEADER */
 
 .cont {
@@ -285,14 +295,13 @@ a {
 
 .box img {
   width: 100%;
-  max-width: 300px;
   object-fit: cover;
   cursor: pointer;
 }
 
 .text {
   padding: 20px;
-  max-width: 300px;
+  max-width: 350px;
   text-align: center;
   cursor: pointer;
 }
@@ -411,6 +420,8 @@ a {
   height: 100%;
   border-radius: 10px;
   background-color: lightgray;
+  position: relative;
+  left: 0;
 }
 
 /* Right Footer */
@@ -443,10 +454,11 @@ a {
 }
 
 .functions .volume .volume-bar .scrolling {
-  width: 30%;
+  width: 50%;
   height: 4px;
   border-radius: 10px;
   background-color: lightgray;
+  position: relative;
 }
 
 .functions .music:hover .bar,
