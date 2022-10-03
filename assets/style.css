@@ -299,6 +299,10 @@ a {
   cursor: pointer;
 }
 
+img:hover {
+  filter: brightness(50%);
+}
+
 .text {
   padding: 20px;
   max-width: 350px;
